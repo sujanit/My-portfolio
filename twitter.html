@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="twitter.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1><img src="https://images.seeklogo.com/logo-png/30/2/twitter-logo-png_seeklogo-305546.png" alt="twitter"></h1>
+
+    <div class="post-box">
+        <input type="text" id="username" placeholder="Username">
+
+        <textarea id="content" placeholder="What's New"></textarea>
+
+        <button onclick="createPost()">Post</button>
+    </div>
+
+    <div class="users">
+        <h2>Follow</h2>
+
+        <div id="userList"></div>
+    </div>
+
+    <div class="feed">
+        <h2>Your Feed</h2>
+
+        <button onclick="showFeed()">Refresh Feed</button>
+
+        <div id="posts"></div>
+    </div>
+
+</div>
+
+<script src="twitter.js"></script>
+</body>
+</html>
